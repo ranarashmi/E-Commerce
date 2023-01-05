@@ -35,34 +35,34 @@
 					<div class="card-body px-5">
 
 						<h3 class="text-center my-3">Sign up here</h3>
-						<form action="">
+						<form action="RegisterServlet" method="post">
 							<div class="form-group">
 								<label for="name">User Name</label> <input type="text"
-									class="form-control" id="name" aria-describedby="emailHelp"
+									class="form-control" name="user_name" id="name" aria-describedby="emailHelp"
 									placeholder="Enter Name">
 							</div>
 
 							<div class="form-group">
 								<label for="email">User Email</label> <input type="email"
-									class="form-control" id="email" aria-describedby="emailHelp"
+									class="form-control" id="email" name="user_email" aria-describedby="emailHelp"
 									placeholder="Enter E-mail">
 							</div>
 
 							<div class="form-group">
 								<label for="password">User Password</label> <input
 									type="password" class="form-control" id="password"
-									aria-describedby="emailHelp" placeholder="Enter Passward">
+									aria-describedby="emailHelp" name="user_password" placeholder="Enter Passward">
 							</div>
 
 							<div class="form-group">
 								<label for="phone">User Phone</label> <input type="number"
-									class="form-control" id="phone" aria-describedby="emailHelp"
+									class="form-control" id="phone" name="user_phone"aria-describedby="emailHelp"
 									placeholder="Enter Phone Number">
 							</div>
 
 							<div class="form-group">
-								<label for="Address">User Address</label>
-								<textarea style="height: 200px;" class="form-control"
+								<label for="Address" >User Address</label>
+								<textarea style="height: 200px;"  name="user_address" class="form-control" 
 									placeholder="Enter user address"></textarea>
 							</div>
 
