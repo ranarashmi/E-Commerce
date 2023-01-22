@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -70,8 +71,14 @@ public class RegisterServlet extends HttpServlet {
 				 tx.commit();
 				hiernateSession.close();
 				
-				out.println("Transaction is completed");
-				out.println("The user id is "+ uId);
+				/*
+				 * out.println("Transaction is completed"); out.println("The user id is "+ uId);
+				 */
+				
+				HttpSession httpSession = request.getSession();
+				httpSession.setAttribute("message", "User "+ uId +" Registered Sucessfully");
+				response.sendRedirect("register.jsp");
+				return;
 				
 			} catch (Exception e) {
 				e.printStackTrace();
