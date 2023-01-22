@@ -31,39 +31,48 @@
 			<div class="col-md-4 offset-md-4">
 
 				<div class="card">
+				
+				<%@include file="Components/message.jsp" %>
 
 					<div class="card-body px-5">
+
+
+						<div class="container text-center">
+							<img alt="add-friend" src="image/Add.png"
+								style="max-width: 100px;" class="img-fluid">
+						</div>
 
 						<h3 class="text-center my-3">Sign up here</h3>
 						<form action="RegisterServlet" method="post">
 							<div class="form-group">
 								<label for="name">User Name</label> <input type="text"
-									class="form-control" name="user_name" id="name" aria-describedby="emailHelp"
-									placeholder="Enter Name">
+									class="form-control" name="user_name" id="name"
+									aria-describedby="emailHelp" placeholder="Enter Name">
 							</div>
 
 							<div class="form-group">
 								<label for="email">User Email</label> <input type="email"
-									class="form-control" id="email" name="user_email" aria-describedby="emailHelp"
-									placeholder="Enter E-mail">
+									class="form-control" id="email" name="user_email"
+									aria-describedby="emailHelp" placeholder="Enter E-mail">
 							</div>
 
 							<div class="form-group">
 								<label for="password">User Password</label> <input
 									type="password" class="form-control" id="password"
-									aria-describedby="emailHelp" name="user_password" placeholder="Enter Passward">
+									aria-describedby="emailHelp" name="user_password"
+									placeholder="Enter Passward">
 							</div>
 
 							<div class="form-group">
 								<label for="phone">User Phone</label> <input type="number"
-									class="form-control" id="phone" name="user_phone"aria-describedby="emailHelp"
-									placeholder="Enter Phone Number">
+									class="form-control" id="phone" name="user_phone"
+									aria-describedby="emailHelp" placeholder="Enter Phone Number">
 							</div>
 
 							<div class="form-group">
-								<label for="Address" >User Address</label>
-								<textarea style="height: 200px;"  name="user_address" class="form-control" 
-									placeholder="Enter user address"></textarea>
+								<label for="Address">User Address</label>
+								<textarea style="height: 200px;" name="user_address"
+									class="form-control" placeholder="Enter user address"></textarea>
 							</div>
 
 							<div class="container text-center">
